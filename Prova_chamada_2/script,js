@@ -1,7 +1,7 @@
 var inputIds = ['Kmatual', 'Kmant', 'litros'];
 
 function start() {
-    $('#addBtn').click(function() {
-        addNewAluno();
+    $('#button').click(function() {
+        addNewKM();
     });
 }
