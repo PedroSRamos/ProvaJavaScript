@@ -1,0 +1,8 @@
+var inputIds = ['Kmatual', 'Kmant', 'litros'];
+var students = [];
+
+function start() {
+    $('#addBtn').click(function() {
+        addNewAluno();
+    });
+}
