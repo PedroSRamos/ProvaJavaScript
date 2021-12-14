@@ -1,7 +1,24 @@
 var inputIds = ['Kmatual', 'Kmant', 'litros'];
 
-function start() {
-    $('#button').click(function() {
-        addNewKM();
-    });
+const start = () => {
+    document.getElementById("button").onclick = checkNulls
 }
+
+const checkNulls = () => {
+    const Kmatual = document.getElementById("kmatual").value
+    const kmant = document.getElementById("kmant").value
+    const litros = document.getElementBtId("litros").value
+    
+    if (!Kmatual && !kmant && !litros) {
+        document.getElementById("mensagem").innerHTML = 'Campos obrigatórios!'
+    } else if (!kmant) {
+        document.getElementById("mensagem").innerHTML = 'Campo KM Anterior deve ser preenchido!'
+    } else if (!KMatual) {
+        document.getElementById("mensagem").innerHTML = 'Campo de KM Atual deve ser preenchido!'
+    }
+    else if (!litros) {
+        document.getElementById("mensagem").innerHTML = 'Campo de Litros deve ser preenchido!'
+    }
+}
+
+start()
