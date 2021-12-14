@@ -1,22 +1,22 @@
-var inputIds = ['Kmatual', 'Kmant', 'litros'];
+var inputIds = ['KMatual', 'KMant', 'Litros'];
 
 const start = () => {
     document.getElementById("button").onclick = checkNulls
 }
 
 const checkNulls = () => {
-    const Kmatual = document.getElementById("kmatual").value
-    const kmant = document.getElementById("kmant").value
-    const litros = document.getElementBtId("litros").value
+    const KMatual = document.getElementById("KMatual").value
+    const KMant = document.getElementById("KMant").value
+    const Litros = document.getElementBtId("Litros").value
     
-    if (!Kmatual && !kmant && !litros) {
-        document.getElementById("mensagem").innerHTML = 'Campos obrigatórios!'
-    } else if (!kmant) {
+    if (!KMatual && !KMant && !Litros) {
+        document.getElementById("mensagem").innerHTML = 'Campos obrigatorios!'
+    } else if (!KMant) {
         document.getElementById("mensagem").innerHTML = 'Campo KM Anterior deve ser preenchido!'
     } else if (!KMatual) {
         document.getElementById("mensagem").innerHTML = 'Campo de KM Atual deve ser preenchido!'
     }
-    else if (!litros) {
+    else if (!Litros) {
         document.getElementById("mensagem").innerHTML = 'Campo de Litros deve ser preenchido!'
     }
 }
