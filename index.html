@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Prova</title>
+
+        <link rel="stylesheet"  href="css/style.css">
+    </head>
+    <body>
+        <h1>Cadastro de Combustivel</h1>
+
+        <form>
+            <div>
+                <label for="kmatual">KM Atual:</label>
+                <input type="text" id="kmatual">
+                <span id="kmatualError" class="error hide">
+                    *Campo Obrigatório
+                </span>
+            </div>
+            <div>
+                <label for="kmanterior">KM Anterior:</label>
+                <input type="text" id="kmanterior">
+                <span id="kmanteriorError" class="error hide">
+                    *Campo Obrigatório
+                </span>
+            </div>
+            <div>
+                <label for="litros">Litros:</label>
+                <input type="text" id="litros">
+                <span id="litrosError" class="error hide">
+                    *Campo Obrigatório
+                </span>
+            </div>
+            <input type="button" value="Salvar" id="addBtn">
+        </form>
+
+        <h2>Consulta da Combustivel</h2>
+
+        <table id="KM">
+            <thead>
+                <tr>
+                    <th>KM Atual</th>
+                    <th>KM Anterior</th>
+                    <th>Litros</th>
+                    <th>KM/L</th>
+                </tr>
+            </thead>
+        </table>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>
