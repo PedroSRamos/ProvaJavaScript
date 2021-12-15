@@ -1,0 +1,16 @@
+.error {
+    color: red;    
+}
+
+.hide {
+    display: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+}
+
+th, td {
+    border: 1px solid black;
+}
